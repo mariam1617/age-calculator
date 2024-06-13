@@ -1,0 +1,110 @@
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  
+
+  :root{
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+  }
+  @font-face {
+    font-family:pop;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+  }
+
+   @font-face {
+    font-family:popbolder ;
+    src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+  } 
+
+  body{
+    background-color:var(--Off-white) ;
+    font-family: pop;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items:center;
+    min-height: 100vh;
+  }
+
+  
+
+  .container{
+    width: 480px;
+    border-bottom-right-radius: 30%;
+    height: 370px;
+    background-color:var(--White);
+    padding: 50px;
+    position: relative;
+    
+}
+.in-flex{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--Off-white);
+   
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+.input-container span{
+color: var(--Smokey-grey);
+}
+
+.input-container input{
+    border: 2px solid var(--Off-white);
+    border-radius: 5px;
+    height:40px;
+    width: 100px;
+    outline:none;
+}
+.input-container input:hover{
+    border:2px solid var(--Purple);
+
+}
+
+
+.submit{
+    background-color: var(--Purple);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    width: 65px;
+    height:65px;
+    position: absolute;
+    right: 6%;
+    top:26%;
+}
+
+.error{
+    font-size: 0.5rem;
+    color: red;
+    padding:5px 0px 0px 3px
+}
+.output-container{
+    font-family: popbolder;
+    font-size: 3rem;
+    margin: 0px;
+    
+ 
+}
+.output-container p{
+    margin:0px;
+    padding-bottom:30px;
+}
+
+.out{
+    color: var(--Purple);
+
+}
